@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    background: hsl(225, 100%, 94%) url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.card{
+    background-color: #fff;  
+
+    position: relative;
+    width: 30%;
+    height:auto;
+    margin: 15PX auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(114, 128, 167,0.9);
+}
+
+.card-header{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%
+}
+
+.card-image{
+    border-radius: 15px 15px 0px 0px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.card-body{
+    padding: 5px 25px;
+    padding-bottom: 20px;
+}
+
+.card-descreption{
+    text-align: center;
+    max-width: 4    00px;
+}
+
+.card-title{
+    font-weight: 900;
+
+    color: #1f2f56;
+}
+
+.card-paragraph{
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #7280a7;
+
+}
+
+.card-planSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+    margin: 0px 15px;
+    padding: 0px 20px;
+
+    background-color: #f5f7ff;
+
+    border-radius: 10px;
+}
+
+.col-left{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-left-title{
+    color: #1f2f56;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.col-left-title span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #7280a7;
+}
+
+.card-link a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 13px;
+
+    transition: 0.4s ease-in-out;
+}
+
+.card-link a:hover{
+    color: rgb(125, 118, 202);
+    text-decoration: none;
+}
+
+.card-buttom{
+    margin: 0px 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.card-buttom .proceed{
+    background-color: #3829e0;
+    color: #fff;
+
+    padding: 15px 0;
+    margin: 25px 0px;
+
+    border-radius: 10px;
+    box-shadow: 0px 15px 22px rgba(93, 81, 230, 0.3);
+    transition: 0.2s ease-in-out;
+
+    cursor: pointer;
+
+    
+}
+
+.card-buttom .proceed:hover{
+    background-color: rgb(125, 118, 202);
+}
+
+.card-buttom .cancel{
+    color: rgb(125, 118, 202);
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+
+    cursor: pointer;
+
+}
+
+.card-buttom .cancel:hover{
+    color: #1f2f56;
+    font-weight: 700;
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+      width: auto;
+    }
+
+    .card-planSection{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+    .card {
+      width: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+      width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+      width: 30%;
+    }
+}
